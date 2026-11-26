@@ -1,12 +1,12 @@
-# Generated with JReleaser 1.27.0 at 2026-11-01T14:54:34.333834111Z
+# Generated with JReleaser 1.27.0 at 2026-11-26T19:02:28.912894533Z
 # Custom JGen formula: JReleaser's java-binary template plus the man page and shell completions.
 
 class Jgen < Formula
   desc "Blueprint-driven code generator for Chenile, and for anything else that is text"
   homepage "https://jgen.chenile.org"
-  url "https://github.com/rajakolluru/chenile-gen/releases/download/2.5.1/jgen-2.5.1.zip"
-  version "2.5.1"
-  sha256 "789ab226a5ffc4a5808f811c720f71c99de14a122fa0693d2d54ee17b6ae5b1b"
+  url "https://github.com/rajakolluru/chenile-gen/releases/download/2.5.2/jgen-2.5.2.zip"
+  version "2.5.2"
+  sha256 "ac752944637d8dd97bb35e48340d68157af4ba2bb11e9248b7d469cbbe16cd77"
   license "MIT"
 
   depends_on "openjdk@25"
@@ -22,6 +22,6 @@ class Jgen < Formula
 
   test do
     output = shell_output("#{bin}/jgen --version")
-    assert_match "2.5.1", output
+    assert_match "2.5.2", output
   end
 end
